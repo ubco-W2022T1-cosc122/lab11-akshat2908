@@ -8,56 +8,155 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
-<script>
-$(document).ready(function(){
-  $("button").click(function(){
-    $("p").toggle();
-  });
-});
-</script>
+
 </head>
 <body>
 
-<div class="container">
-  <h2>Justified Button Groups</h2>
-  <div class="btn-group btn-group-justified">
-    <a href="#" class="btn btn-primary">Apple</a>
-    <a href="#" class="btn btn-primary">Samsung</a>
-    <a href="#" class="btn btn-primary">Sony</a>
-  </div>
-</div>
-<button>Toggle between hiding and showing the paragraphs</button>
+  <img src="">
 
-<p>
-<table class="table">
+  
+  <table class="table">
     <thead>
-      <tr>
-        <th scope="col">#</th>
-        <th scope="col">First</th>
-    </tr>
+    </thead>
     <tbody>
-        <tr>
-          <th scope="row">1</th>
-          <td>Mark</td>
-        </tr>
+      <tr>
+        <th scope="row">Interesting</th>
+        <td>
+          <div class="btn-group btn-group-toggle" data-toggle="buttons">
+            <label class="btn btn-primary active">
+              <input type="radio" name="options" id="option1" autocomplete="off" checked> Agree
+            </label>
+            <label class="btn btn-danger">
+              <input type="radio" name="options" id="option2" autocomplete="off"> Neutral
+            </label>
+            <label class="btn btn-success">
+              <input type="radio" name="options" id="option3" autocomplete="off"> Disagree
+            </label>
+          </div>          
+        </td>
+      </tr>
 
-        <tr>
-            <th scope="row">1</th>
-            <td>Mark</td>
-          </tr>
+      <tr>
+        <th scope="row">Difficulty</th>
+        <td>
+          <div class="btn-group btn-group-toggle" data-toggle="buttons">
+            <label class="btn btn-primary active">
+              <input type="radio" name="options" id="option1" autocomplete="off" checked> Easy
+            </label>
+            <label class="btn btn-danger">
+              <input type="radio" name="options" id="option2" autocomplete="off"> Intermediate
+            </label>
+            <label class="btn btn-success">
+              <input type="radio" name="options" id="option3" autocomplete="off"> Hard
+            </label>
+          </div>
+        
+        </td>
+      </tr>
+    
+      <tr>
+        <th scope="row">Creative</th>
+        <td>
+          <div class="btn-group btn-group-toggle" data-toggle="buttons">
+            <label class="btn btn-primary active">
+              <input type="radio" name="options" id="option1" autocomplete="off" checked> Very creative
+            </label>
+            <label class="btn btn-danger">
+              <input type="radio" name="options" id="option2" autocomplete="off"> Neutral
+            </label>
+            <label class="btn btn-success">
+              <input type="radio" name="options" id="option3" autocomplete="off"> Not creative
+            </label>
+          </div>
+        
+        </td>
+      </tr>
+      <tr>
+        <th scope="row">Overall</th>
+        <td>
+          <div class="btn-group btn-group-toggle" data-toggle="buttons">
+            <label class="btn btn-primary active">
+              <input type="radio" name="options" id="option1" autocomplete="off" checked> Great
+            </label>
+            <label class="btn btn-danger">
+              <input type="radio" name="options" id="option2" autocomplete="off"> Neutral
+            </label>
+            <label class="btn btn-success">
+              <input type="radio" name="options" id="option3" autocomplete="off"> Needs Improvement
+            </label>
+          </div>
+        
+        </td>
+      </tr>
+    </tbody>
+  </table>
 
+  <div class="mt-4">
+    <button type="button" class="btn-btn-danger" onclick="window.location.reload()"> Reset </button>
+  </div>
+
+  <div class="container">
+    <h2></h2>
+    <button type="button" class="btn btn-info" data-toggle="collapse" data-target="#demo">Compare to my rating</button>
+    <div id="demo" class="collapse">
+      <div class="mb-3">
+        <label for="exampleFormControlTextarea1" class="form-label">What I learned from this lab</label>
+        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+      </div>
+
+      <table class="table">
+        <thead>
+        </thead>
+        <tbody>
           <tr>
-            <th scope="row">1</th>
-            <td>Mark</td>
+            <th scope="row">Interesting</th>
+            <td>
+              <button type="button" class="btn btn-primary">Agree</button>
+                    
+            </td>
           </tr>
-
+    
           <tr>
-            <th scope="row">1</th>
-            <td>Mark</td>
-          </tr>
+            <th scope="row">Difficulty</th>
 
-          </tbody>
-        </p>
+            <td>
+              <button type="button" class="btn btn-danger">Hard</button>
+        
+            
+            </td>
+          </tr>
+        
+          <tr>
+            <th scope="row">Creative</th>
+            <td>
+              <button type="button" class="btn btn-success">Neutral</button>
+            </td>
+          </tr>
+          <tr>
+            <th scope="row">Overall</th>
+            <td>
+             <button type="button" class="btn btn-danger">Needs Improvement</button>
+             
+            
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    
+
+
+    
+
+  
+
+
+
+
+
+
+
+
+      
 
 
 
